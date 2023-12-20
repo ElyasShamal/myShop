@@ -44,9 +44,13 @@ function Navbar() {
         </li>
       </ul>
       <div className="nav-login">
-        <img src={cart} alt="cart" height="25px" width="25px" />
+        <Link to="./Cart">
+          <img src={cart} alt="cart" height="25px" width="25px" />
+        </Link>
         <div className="cart-count">0</div>
-        <button>Login</button>
+        <Link to="./login">
+          <button>Login</button>
+        </Link>
       </div>
     </div>
   );
