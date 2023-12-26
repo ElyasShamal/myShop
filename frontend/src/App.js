@@ -6,6 +6,10 @@ import ShopCategory from "./pages/ShopCategory";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import LoginSignup from "./pages/LoginSignup";
+import Footer from "./Components/Footer/Footer";
+import men_banner from "./Components/Assets/banner_mens.png";
+import women_banner from "./Components/Assets/banner_women.png";
+import kids_banner from "./Components/Assets/banner_kids.png";
 
 function App() {
   return (
@@ -15,14 +19,17 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Shop />}></Route>
-          <Route path="/Men" element={<ShopCategory category="Men" />}></Route>
           <Route
-            path="/Women"
-            element={<ShopCategory category="Women" />}
+            path="/men"
+            element={<ShopCategory category="men" banner={men_banner} />}
+          ></Route>
+          <Route
+            path="/women"
+            element={<ShopCategory category="women" banner={women_banner} />}
           ></Route>
           <Route
             path="/Kids"
-            element={<ShopCategory category="Kids" />}
+            element={<ShopCategory category="kid" banner={kids_banner} />}
           ></Route>
 
           <Route path="/product" element={<Product />}></Route>
@@ -30,6 +37,7 @@ function App() {
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/login" element={<LoginSignup />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
