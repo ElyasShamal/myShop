@@ -31,17 +31,13 @@ const ProductDisplay = (props) => {
         </div>
         <div className="produtdisplay-right-prices">
           <div className="old-price">${product.old_price}</div>
-          <div className="new-price">{product.new_price}</div>
+          <div className="new-price">${product.new_price}</div>
         </div>
 
         <div className="discription">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quod
           vel incidunt vitae beatae libero ad eaque, ab ratione repudiandae et
-          quo neque similique temporibus nam autem omnis repellendus eligendi?
-          Nesciunt pariatur cumque repellat beatae, amet illum, maxime unde eius
-          libero molestiae consequuntur ipsam tempora temporibus quis, porro nam
-          aliquid. Unde harum, minus ratione impedit inventore eaque amet
-          praesentium voluptates.
+          quo neque similiqu utem omnis repellendus eligendi?
         </div>
 
         <div className="right-description">
@@ -55,8 +51,8 @@ const ProductDisplay = (props) => {
           <div>XL</div>
           <div>XXL</div>
         </div>
+        <button className="add-btn">Add To Cart</button>
       </div>
-      <button>Add To Cart</button>
     </div>
   );
 };
